@@ -49,7 +49,7 @@ const TasksContextProvider = ({ children }) => {
     return `${hours}:${minutes}`;
   };
 
-  const AddNewTask = async (name) => {
+  const AddNewTask = async (taskName, name) => {
     try {
       await fetch("https://home-tasks-server.onrender.com/addTask", {
         method: "POST",
@@ -58,7 +58,7 @@ const TasksContextProvider = ({ children }) => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          name: name,
+          name: `${taskName} נפתחה ע"י ${name}`,
           date: `${GetFormatDate()} , ${GetFormatTime()}`,
           done: false,
         }),

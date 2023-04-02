@@ -6,6 +6,10 @@ const Main = () => {
   const { tasks, AddNewTask } = useContext(TasksContext);
   const taskName = useRef("");
 
+  function isEmptyOrSpaces(str) {
+    return str === null || str.match(/^ *$/) !== null;
+  }
+
   return (
     <>
       <h1>משימות בית</h1>
@@ -13,7 +17,8 @@ const Main = () => {
         <input type="text" placeholder="שם המשימה" ref={taskName} />
         <button
           onClick={() => {
-            AddNewTask(taskName.current.value);
+            let name = prompt("שם:")
+            AddNewTask(taskName.current.value, name);
             taskName.current.value = "";
           }}
         >
