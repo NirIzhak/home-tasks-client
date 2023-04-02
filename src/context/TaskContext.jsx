@@ -58,7 +58,7 @@ const TasksContextProvider = ({ children }) => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          name: `${taskName} נפתחה ע"י ${name}`,
+          name: `${taskName} (${name})`,
           date: `${GetFormatDate()} , ${GetFormatTime()}`,
           done: false,
         }),
