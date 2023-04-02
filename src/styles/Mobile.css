@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+*{
+    font-family: 'Fredoka', sans-serif;
+}
+
+
+.cube {
+    width: 25px;
+    height: 25px;
+    border-radius: 20%;
+}
+
+.red {
+    background-color: rgb(239, 71, 71);
+}
+
+.green {
+    background-color: rgb(101, 216, 101);
+}
+
+.map {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.map-info {
+    display: flex;
+    align-items: center;
+}
+
+.map-info p {
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-block: 15px;
+}
+
+.task {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    margin-block: 10px;
+    border-radius: 6px;
+    padding: 15px;
+    align-items: center;
+    position: relative;
+}
+
+.new-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 25px;
+}
+
+.new-task input {
+    border: none;
+    border-bottom: 2px solid rgb(0, 115, 255);
+    ;
+    border-radius: 0;
+    margin-left: 15%;
+    font-size: 20px;
+    width: 30%;
+}
+
+.new-task button {
+    font-size: 18px;
+    background-color: transparent;
+    color: rgb(0, 115, 255);
+    border: none;
+}
+
+.task-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.task-date,
+.task-doneBy {
+    font-size: 16px;
+}
+
+
+.task button {
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: rgb(0, 208, 236);
+    border-radius: 6px;
+    font-size: 14px;
+    margin-left: 5%;
+}
+
+.deleteBt {
+    position: absolute;
+    color: red;
+    top: 2px;
+    left: 2px;
+    font-size: 22px;
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+
+
+
+input[type=color]+div.sp-disabled {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+input[type=color]+div.sp-disabled .sp-preview {
+    margin: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #999;
+}
+
+input[type=color]+div.sp-disabled .sp-dd {
+    display: none;
+}
+
+
+.new-task input:focus {
+    outline: none;
+}
+
+
+.no-tasks{
+    text-align: center;
+}
